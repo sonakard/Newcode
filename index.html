@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Category and Product Management</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Category and Product Management</h1>
+    <div id="category-list">
+        <h2>Categories</h2>
+        <ul id="category-tree"></ul>
+    </div>
+    <div id="product-list">
+        <h2>Products</h2>
+        <ul id="product-items"></ul>
+    </div>
+
+    <div id="add-category-form">
+        <h2>Add Category</h2>
+        <form id="category-form">
+            <label for="category-name">Category Name:</label>
+            <input type="text" id="category-name" name="category-name">
+            <label for="parent-category">Parent Category:</label>
+            <select id="parent-category" name="parent-category">
+                <option value="">-- None --</option>
+            </select>
+            <input type="submit" value="Add Category">
+        </form>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
